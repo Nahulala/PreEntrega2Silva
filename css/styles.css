@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padre{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    column-gap: 20px;
+    justify-content: center;   
+    grid-template-areas: "hijo1 hijo2";
+}
+@media (max-width: 768px) {
+    .padre{
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    
+    }
+}
+@media (max-width: 768px){
+    .hijo1 {
+        max-width: 768px;
+        flex-direction: column;        
+    }
+}
+.hijo1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+    grid-area: hijo1;
+    
+}
+.hijo2 {
+    text-align: center;
+    margin-top: 100px;
+    grid-area: hijo2;
+   
+}
+.footer{
+    text-align: center;
+    margin-top: 50px;
+}
+.ubi {
+    display: flex;
+    align-items: center;
+}
+.mapa {
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 700px;
+}
+@media (max-width: 768px){
+    .mapa {
+       margin-top: 20px;
+       margin-left: 150px;
+    }
+}
+.ubit{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+@media (max-width: 768px){
+    .ubit{
+        margin-left: 150px;
+        margin-top: 80px;
+    }
+}
+.formulario input{
+    background-color: #dd95d1;
+    border: none;
+    border-bottom: 2px solid #f5f5f5;
+  }
+.formulario input:focus{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.formulario{
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  border-radius: 10px;
+  padding: 30px;
+  color: antiquewhite;
+  background-color: #dd95d1;
+  display: grid;
+  row-gap: 5px;
+  column-gap: 20px;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-areas:  "label-nombre" 
+                        "input-nombre"
+                        "label-apellido"
+                        "input-apellido"
+                        "label-tel" 
+                        "input-tel"
+                        "label-email"
+                        "input-email"
+                        "label-terminos"
+                        "input-terminos"
+                        "btn"
+                        "btn"
+
+} 
+.formulario label:nth-child(1){
+     grid-area: label-nombre ;
+}
+.formulario input:nth-child(2){
+    grid-area: input-nombre ;
+    text-align: center;
+}
+.formulario label:nth-child(3){
+    grid-area: label-apellido ;
+}
+.formulario input:nth-child(4){
+    grid-area: input-apellido;
+    text-align: center;
+}
+.formulario label:nth-child(5){
+    grid-area: label-tel ;
+}
+.formulario input:nth-child(6){
+     grid-area: input-tel ;
+    text-align: center;
+}
+.formulario label:nth-child(7){
+     grid-area: label-email ;
+}
+.formulario input:nth-child(8){
+     grid-area: input-email ;
+     text-align: center;
+}
+.formulario label:nth-child(9){
+     grid-area: label-terminos ;
+}
+.formulario input:nth-child(10){
+     grid-area: input-terminos ;
+     text-align: center;
+}
+.formulario button:nth-child(11){
+    grid-area: btn;
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.formulario form {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+label {
+     font-weight: bold;
+}
+button[type="submit"] {
+      margin-top: 10px;
+}
+
+.contenedorico{
+     display: flex;
+     justify-content: center;
+  
+}
+.contenedorico img{
+     width: 40px;
+     height: 40px;
+     margin-left: 15px;
+     margin-right: 15px;
+     margin-top: 100px;
+}
+.contenedorinicio{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.caja{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(37, 15, 51);
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #df55aa;
+    border-radius: 5px;
+}
+.imagentatto{
+    object-fit: cover;
+    width:100%;
+    height:80%;
+}
+.caja h5{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.caja p{
+    padding: 10px;
+    font-size: 20px;
+}
+.botonazo{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
