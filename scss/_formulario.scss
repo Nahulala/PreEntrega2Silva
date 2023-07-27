@@ -1,0 +1,91 @@
+.formulario input{
+    background-color: $rosaformulario;
+    border: none;
+    border-bottom: 2px solid $laricablanca;
+  }
+.formulario input:focus{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid $laricablanca;
+}
+
+.formulario{
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  border-radius: 10px;
+  padding: 30px;
+  color: antiquewhite;
+  background-color: $rosaformulario;
+  display: grid;
+  row-gap: 5px;
+  column-gap: 20px;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-areas:  "label-nombre" 
+                        "input-nombre"
+                        "label-apellido"
+                        "input-apellido"
+                        "label-tel" 
+                        "input-tel"
+                        "label-email"
+                        "input-email"
+                        "label-terminos"
+                        "input-terminos"
+                        "btn"
+                        "btn"
+
+} 
+.formulario label:nth-child(1){
+     grid-area: label-nombre ;
+}
+.formulario input:nth-child(2){
+    grid-area: input-nombre ;
+    text-align: center;
+}
+.formulario label:nth-child(3){
+    grid-area: label-apellido ;
+}
+.formulario input:nth-child(4){
+    grid-area: input-apellido;
+    text-align: center;
+}
+.formulario label:nth-child(5){
+    grid-area: label-tel ;
+}
+.formulario input:nth-child(6){
+     grid-area: input-tel ;
+    text-align: center;
+}
+.formulario label:nth-child(7){
+     grid-area: label-email ;
+}
+.formulario input:nth-child(8){
+     grid-area: input-email ;
+     text-align: center;
+}
+.formulario label:nth-child(9){
+     grid-area: label-terminos ;
+}
+.formulario input:nth-child(10){
+     grid-area: input-terminos ;
+     text-align: center;
+}
+.formulario button:nth-child(11){
+    grid-area: btn;
+    background-color: $laricablanca;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.formulario form {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+label {
+     font-weight: bold;
+}
+button[type="submit"] {
+      margin-top: 10px;
+}

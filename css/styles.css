@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.caja .botonazo {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 20px;
+  background-color: #dd95d1;
+}
+
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -123,29 +132,24 @@
   width: 100%;
   height: 80%;
 }
-.caja .botonazo {
-  display: block;
-  width: 80px;
-  margin: 0 auto;
-  margin-top: 15px;
-  border-radius: 20px;
-  background-color: #dd95d1;
+.footer i {
+  font-size: 90px;
+  margin: 0px 18px;
 }
-
-.footer {
-  display: flex;
-  justify-content: center;
+.footer .facebook {
+  color: #1877f2;
 }
-.footer .socialmedia {
-  display: flex;
-  justify-content: center;
+.footer .instagram {
+  color: #c32aa3;
 }
-.footer .socialmedia img {
-  width: 40px;
-  height: 40px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 100px;
+.footer .twitter {
+  color: #1da1f2;
+}
+.footer .whatsapp {
+  color: #25d366;
+}
+.footer .linkedin {
+  color: #0a66c2;
 }
 
 .formulario input {
