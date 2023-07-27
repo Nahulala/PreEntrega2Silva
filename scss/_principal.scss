@@ -1,0 +1,34 @@
+.padre{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    column-gap: 20px;
+    justify-content: center;   
+    grid-template-areas: "hijo1 hijo2";
+    @media (max-width: 768px) {
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+}
+
+.hijo1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+    grid-area: "hijo1";
+    @media (max-width: 768px)
+        {
+            max-width: 768px;
+            flex-direction: column;        
+        }
+    }
+    
+
+.hijo2 {
+    text-align: center;
+    margin-top: 100px;
+    grid-area: "hijo2";
+   
+}
